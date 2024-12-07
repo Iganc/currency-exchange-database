@@ -5,7 +5,7 @@ This project provides a simple REST API for currency exchange rates. It stores c
 ## Features
 - List all currencies: Retrieve a list of all currencies available in the database.
 - Get latest exchange rate: Fetch the latest exchange rate for a specific currency pair (e.g., USD to EUR).
-- Data Source: The exchange rates are fetched and stored using an external source
+- Data Source: The exchange rates are fetched and stored using an external source, yfinance 
 
 ## API Endpoints
 ### GET /currency/
