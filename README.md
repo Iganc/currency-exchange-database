@@ -19,7 +19,8 @@ Description: Fetches the latest exchange rate for the given currency pair
 
 ## screenshots:
 ## GET /currency/
-![image](https://github.com/user-attachments/assets/79b424b4-4512-4be2-9dd6-e85b88dc20a3)
+![image](https://github.com/user-attachments/assets/e1a970c2-fdc6-48b0-b156-258d5e7fa406)
+
 
 ## GET /currency/EUR/USD/
 ![image](https://github.com/user-attachments/assets/a4264d4d-25cd-492b-9c1b-fe5d6a4d3d62)
