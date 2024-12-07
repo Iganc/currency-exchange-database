@@ -19,3 +19,5 @@ def CurrencyPairView(request, currency_from, currency_to):
         })
     except ExchangeRate.DoesNotExist:
         raise Http404(f'Exchange rate not found for {currency_from} to {currency_to}')
+def HomeView(request):
+    return render(request, 'home.html')

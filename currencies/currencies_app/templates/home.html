@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange API</title>
+</head>
+<body>
+    <h1>Welcome to the Currency Exchange API</h1>
+    <ul>
+        <li><a href="{% url 'currency_list' %}">List all currencies</a></li>
+        <li><a href="{% url 'currency_exchange_rate' currency_from='EUR' currency_to='USD' %}">Get exchange rate for EUR/USD</a></li>
+        <li><a href="{% url 'currency_exchange_rate' currency_from='USD' currency_to='JPY' %}">Get exchange rate for USD/JPY</a></li>
+        <li><a href="{% url 'currency_exchange_rate' currency_from='PLN' currency_to='USD' %}">Get exchange rate for PLN/USD</a></li>
+    </ul>
+</body>
+</html>
