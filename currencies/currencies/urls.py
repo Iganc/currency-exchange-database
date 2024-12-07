@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from currencies_app.views import CurrencyPairView, CurrencyListView
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('currency/<str:currency_from>/<str:currency_to>/', CurrencyPairView, name='currency_exchange_rate'),
+    path('currency/', CurrencyListView, name='currency_list')
 ]
