@@ -16,6 +16,8 @@ class Command(BaseCommand):
         start_date = end_date - timedelta(days=30)
 
         for currency_from_code, currency_to_code in currency_pairs:
+            if 'SNG' in [currency_from_code, currency_to_code]:
+                continue
             try:
                 symbol = f"{currency_from_code}{currency_to_code}=X"
                 data = yf.download(symbol, start=start_date, end=end_date)
@@ -32,14 +34,21 @@ class Command(BaseCommand):
 
                     updated_at = index
 
-
-                    ExchangeRate.objects.create(
+                    # Check if this exchange rate already exists for the given currency pair and date
+                    if not ExchangeRate.objects.filter(
                         currency_from=currency_from,
                         currency_to=currency_to,
-                        exchange_rate=exchange_rate,
                         updated_at=updated_at
-                    )
-                    self.stdout.write(self.style.SUCCESS(f"Saved rate for {currency_from_code}/{currency_to_code} on {updated_at}"))
+                    ).exists():
+                        ExchangeRate.objects.create(
+                            currency_from=currency_from,
+                            currency_to=currency_to,
+                            exchange_rate=exchange_rate,
+                            updated_at=updated_at
+                        )
+                        self.stdout.write(self.style.SUCCESS(f"Saved rate for {currency_from_code}/{currency_to_code} on {updated_at}"))
+                    else:
+                        self.stdout.write(self.style.WARNING(f"Rate already exists for {currency_from_code}/{currency_to_code} on {updated_at}"))
 
             except Exception as e:
                 self.stdout.write(self.style.ERROR(f"Error fetching data for {currency_from_code}/{currency_to_code}: {e}"))

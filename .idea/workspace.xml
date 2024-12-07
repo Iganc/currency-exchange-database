@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2734bd10-eb90-466d-b067-ce832d3e0f7b" name="Changes" comment="Added urls and updated the views">
-      <change afterPath="$PROJECT_DIR$/currencies/currencies_app/templates/home.html" afterDir="false" />
+    <list default="true" id="2734bd10-eb90-466d-b067-ce832d3e0f7b" name="Changes" comment="Added tests and made alterations to code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currencies/currencies/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/currencies/currencies/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currencies/currencies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/currencies/currencies/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currencies/currencies_app/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/currencies/currencies_app/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currencies/currencies_app/management/commands/fetch_historical_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/currencies/currencies_app/management/commands/fetch_historical_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currencies/currencies_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/currencies/currencies_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/currencies/currencies_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/currencies/currencies_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +184,7 @@
       <workItem from="1733388414952" duration="156000" />
       <workItem from="1733388951704" duration="1285000" />
       <workItem from="1733517415122" duration="4797000" />
-      <workItem from="1733562503153" duration="10986000" />
+      <workItem from="1733562503153" duration="14321000" />
     </task>
     <task id="LOCAL-00001" summary="Create a django project">
       <option name="closed" value="true" />
@@ -228,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733578926106</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added tests and made alterations to code">
+      <option name="closed" value="true" />
+      <created>1733586682546</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733586682546</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +246,8 @@
     <MESSAGE value="fetching and updating the database" />
     <MESSAGE value="Added the admin interface and populated it with data from the last 30 days from yfinance. Updated the code on fetch_and_update_rates.py so it loads correctly and added printing to check if data is loaded correcly." />
     <MESSAGE value="Added urls and updated the views" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added urls and updated the views" />
+    <MESSAGE value="Added tests and made alterations to code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests and made alterations to code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/REST_API_currencies$.coverage" NAME=" Coverage Results" MODIFIED="1733583848551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/currencies" />

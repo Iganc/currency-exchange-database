@@ -12,5 +12,8 @@ class ExchangeRate(models.Model):
     exchange_rate = models.DecimalField(max_digits=10, decimal_places=6)
     updated_at = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        unique_together = ('currency_from', 'currency_to')
+
     def __str__(self):
         return f'{self.currency_from.code} to {self.currency_to.code}'
