@@ -29,3 +29,9 @@ Description: Fetches the latest exchange rate for the given currency pair
 
 ## GET /currency/EUR/USD/
 ![image](https://github.com/user-attachments/assets/672e51d9-3bc9-4344-9c8a-377c3914e3fb)
+
+## ADMIN Interface:
+![image](https://github.com/user-attachments/assets/7f223421-30b0-46df-8a4c-e713c7e08c5f)
+![image](https://github.com/user-attachments/assets/0ba442e3-bdc2-4259-8cc0-5a61a9c0b4e6)
+![image](https://github.com/user-attachments/assets/34eb59c8-7862-4be9-a5d2-cce1f32294ff)
+Stores data from last 30 days.
