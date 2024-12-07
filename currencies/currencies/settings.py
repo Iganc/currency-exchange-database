@@ -78,11 +78,11 @@ from decouple import config
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'currency_and_rates',
+        'NAME': 'rates',
         'USER': 'root',
         'PASSWORD': config('DB_PASSWORD'),
-        'HOST':'localhost',
-        'PORT':'3306',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
